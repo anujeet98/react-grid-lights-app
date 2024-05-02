@@ -1,30 +1,17 @@
-# React + TypeScript + Vite
+---
+runme:
+  id: 01HWXNWAZ7HHZ5VVHRZ8SQ0EKD
+  version: v3
+---
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Grid Light Problem - React
 
-Currently, two official plugins are available:
+Given a 3 x 3 grid, turn on the lights by selecting. When all lights turned-on, grid lights are turned-off in the reverse order of selection
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Project setup
 
-## Expanding the ESLint configuration
+```js {"id":"01HWXNWAYZ3D2APJW96D3XKH65"}
+npm install
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+npm run dev
 ```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
